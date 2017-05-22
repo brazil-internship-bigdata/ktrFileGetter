@@ -43,7 +43,7 @@ public class Main {
 	            throw new IOException(
 	                String.format("Read %d bytes; expected %d", offset, len));
 	        }
-	        System.out.println( data);
+	        System.out.println( new String (data));
 	    } finally {
 	        is.close();
 	    }
